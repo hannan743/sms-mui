@@ -1,0 +1,50 @@
+<div class="login-area">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Login</mat-card-title>
+            <mat-card-subtitle>Enter 4-digit Employee ID </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <form class="login-form" [formGroup]="makForm" (ngSubmit)="onSubmit()">
+                <div class="empl-id-box">
+                    <input type="text" formControlName="employeeID1"
+                        [ngClass]="{'is-invalid': submitted && makForm.controls['employeeID1'].errors}"
+                        name="employeeID1" maxlength="1" />
+                    <input type="text" formControlName="employeeID2"
+                        [ngClass]="{'is-invalid': submitted && makForm.controls['employeeID2'].errors}"
+                        name="employeeID1" name="employeeID1" maxlength="1" />
+                    <input type="text" formControlName="employeeID3"
+                        [ngClass]="{'is-invalid': submitted && makForm.controls['employeeID3'].errors}"
+                        name="employeeID1" name="employeeID1" maxlength="1" />
+                    <input type="text" formControlName="employeeID4"
+                        [ngClass]="{'is-invalid': submitted && makForm.controls['employeeID4'].errors}"
+                        name="employeeID1" name="employeeID1" maxlength="1" />
+                </div>
+                <mat-card-subtitle>Enter 6-digit PIN </mat-card-subtitle>
+
+                <input type="password" formControlName="employeePIN1"
+                    [ngClass]="{'is-invalid': submitted && makForm.controls['employeePIN1'].errors}" name="employeeID1"
+                    name="employeePIN1" maxlength="1" />
+                <input type="password" formControlName="employeePIN2"
+                    [ngClass]="{'is-invalid': submitted && makForm.controls['employeePIN2'].errors}" name="employeeID1"
+                    name="employeePIN2" maxlength="1" />
+                <input type="password" formControlName="employeePIN3"
+                    [ngClass]="{'is-invalid': submitted && makForm.controls['employeePIN3'].errors}" name="employeeID1"
+                    name="employeePIN3" maxlength="1" />
+                <input type="password" formControlName="employeePIN4"
+                    [ngClass]="{'is-invalid': submitted && makForm.controls['employeePIN4'].errors}" name="employeeID1"
+                    name="employeePIN4" maxlength="1" />
+                <input type="password" formControlName="employeePIN5"
+                    [ngClass]="{'is-invalid': submitted && makForm.controls['employeePIN5'].errors}" name="employeeID1"
+                    name="employeePIN5" maxlength="1" />
+                <input type="password" formControlName="employeePIN6"
+                    [ngClass]="{'is-invalid': submitted && makForm.controls['employeePIN6'].errors}" name="employeeID1"
+                    name="employeePIN6" maxlength="1" />
+
+                <div class="mak-submit-btn">
+                    <button type="submit" mat-flat-button>Login</button>
+                </div>
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
